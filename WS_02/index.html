@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+       h1 {
+        color: green;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 2rem;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+        <h1 style="color: red;">Saurab Bhandari</h1>
+        </header>
+
+        <section aria-labelledby="about-me">
+            <h2 id="about-me">About Me</h2>
+            <p>Hello! My name is Saurab. I am an IT student at Laurea University of Applied Sciences. I enjoy learning new things.</p>
+            <figure>
+                <img src="testikuva.jpg" alt="Photo of Saurab Bhandari" width="200">
+            </figure>
+        </section>
+
+<div class="content-box">
+    <h3>Sample Heading</h3>
+    <p>This is a sample paragraph inside a div element.</p>
+</div>
+        <section aria-labelledby="hobbies">
+            <h2 id="hobbies">My Hobbies</h2>
+            <ul>
+                <li>Going to the gym</li>
+                <li>Traveling</li>
+                <li>Playing football</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="favorite-website">
+            <h2 id="favorite-website">My Favorite Website</h2>
+            <p><a href="https://www.laurea.fi" target="_blank" rel="noopener noreferrer">Visit Laurea</a></p>
+        </section>
+
+        <section aria-labelledby="courses">
+            <h2 id="courses">My Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Websivuston kehittäminen</td>
+                        <td>HTML, CSS and Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Communication in English</td>
+                        <td>English Communication</td>
+                    </tr>
+                    <tr>
+                        <td>ICT-infrastruktuurin ja pilvipalveluiden perusteet</td>
+                        <td>ICT Infrastructure and Cloud Services</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="contact-me">
+            <h2 id="contact-me">Contact Me</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
